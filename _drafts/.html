@@ -1,0 +1,24 @@
+---
+layout: post
+title: ''
+date: 
+type: post
+published: false
+status: draft
+categories:
+- Web &amp; Technology
+tags: []
+meta:
+  _edit_last: '1'
+author:
+  login: admin
+  email: cczona@gmail.com
+  display_name: admin
+  first_name: Carina C.
+  last_name: Zon
+---
+<p>Last weekend, I volunteered as a coach for the first RailsGirls workshop in the U.S.  Exciting!  Among the many reasons to look forward to it: a chance to see <a href="http://yehudakatz.com/2012/06/05/tokaido-status-update-implementation-details/">Tokaido in action</a>.  There's nothing like a random collection of Macs to stress test an approach for getting Ruby 1.9.* to consistently install smoothly in the hands of novices.  Boy did this one go smoothly.  And <em>fast</em>, in comparison to the XCode Commandline Tools method.</p>
+<p>The only glitch was experienced by some of the Lion users: the bash script would declare installation a success and yet their terminal would still only find system Ruby and system gems.  Even after opening a new tab, the shell seemed to have no awareness of Tokaido's existence. Kenneth Reitz, author of <a href="https://github.com/kennethreitz/osx-gcc-installer">oxs-gcc-installer</a>, peeked over some shoulders and realized that the problem was that the script writes to <var>~/.profile</var>.  His fix was easy:</p>
+<p><code>echo "source ~/.profile" >> ~/.bash_profile</code></p>
+<p>Then open yet another tab.  Voila.</p>
+<p>So that got me curious.  It's a pain to keep straight <var>.profile</var> vs <var>.bash_profile</var> vs. <var>.bashrc</var> (not to mention <var>/etc/profile</var>, and <var>~/.MacOSX/environment.plist</var>, oy vey!).  So it wasn't immediately obvious why <var>.bash_profile</var> was needed.  If it doesn't exist, shouldn't OSX source <var>~/.profile</var> anyway?</p>
