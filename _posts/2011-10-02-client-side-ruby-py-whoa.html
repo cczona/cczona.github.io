@@ -1,0 +1,37 @@
+---
+layout: post
+title: Client-side Ruby & Py, whoa.
+date: 2011-10-02 02:06:47.000000000 -07:00
+type: post
+published: true
+status: publish
+categories:
+- Web &amp; Technology
+tags: []
+meta:
+  _edit_last: '1'
+author:
+  login: admin
+  email: cczona@gmail.com
+  display_name: admin
+  first_name: Carina C.
+  last_name: Zon
+---
+<p>The convention wisdom used to be, "JavaScript is the client-side scripting language; Ruby and Python are server-side scripting languages."</p>
+<p>In truth, <a href="http://en.wikipedia.org/wiki/Server-side_JavaScript">JavaScript has always been a server-side language too</a>.  Projects like <a href="http://nodejs.org/">node.js</a> have lately raised the visibility of that mightily.</p>
+<p>Ahh, but what about potential for server-side languages to execute natively in a browser?</p>
+<p><a href="http://cczona.com/blog/wp-content/uploads/2011/10/1006052.png"><img src="{{ site.baseurl }}/assets/1006052.png" alt="" title="Screenshot of Gestalt example" width="878" height="357" class="aligncenter size-full wp-image-80" /></a></p>
+<p><a href="http://visitmix.com/labs/gestalt/">Gestalt</a> is an interesting development on that front: taking advantage of Microsoft's Silverlight Dynamic Language Runtime (DLR) to bring Ruby and Python over to the client-side.</p>
+<p>A future of &lt;script type="text/ruby"&gt; could be groovy. </p>
+<p><code><br />
+  def onclick(s,e)<br />
+    window.alert "Hello, World!"<br />
+  end<br />
+  document.say_hello.attach_event(<br />
+    'onclick',<br />
+    System::EventHandler[System::Windows::Browser::HtmlEventArgs].new(method(:onclick))<br />
+  )<br />
+</code></p>
+<p><a href="http://www.microsoft.com/getsilverlight/get-started/install/default.aspx"><img src="{{ site.baseurl }}/assets/1006027-300x201.png" alt="" title="Microsoft Silverlight browser support matrix 2011-10-01" width="300" height="201" class="alignright size-medium wp-image-77" /></a></p>
+<p>Though I'll be a lot more excited about a solution not dependent on a plugin.  Silverlight is far from ubiquitous.  <a href="http://www.microsoft.com/getsilverlight/get-started/install/default.aspx">Even on Microsoft's own OSs, browser support is not universal.  And no love for Linux at all.</a>  That's some pretty major shortcomings.</p>
+<p>But interesting, oh yes.</p>

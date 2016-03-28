@@ -1,0 +1,34 @@
+---
+layout: post
+title: Easy inspection of a RubyGems library
+date: 2012-02-17 12:42:44.000000000 -08:00
+type: post
+published: true
+status: publish
+categories:
+- Web &amp; Technology
+tags: []
+meta:
+  _edit_last: '1'
+author:
+  login: admin
+  email: cczona@gmail.com
+  display_name: admin
+  first_name: Carina C.
+  last_name: Zon
+---
+<p>Handy trick, courtesy of Aaron Blohowiak on ruby-6:</p>
+<p><code>$ gem install open_gem<br />
+$ gem open [gem_name]</code></p>
+<p>The entire gem's codebase is opened into your favorite editor, as defined by the shell variable EDITOR.</p>
+<p><code>$ echo EDITOR<br />
+vi<br />
+$ $EDITOR = emacs<br />
+$ echo EDITOR<br />
+emacs<br />
+</code></p>
+<p>My own choice is actually <a href="http://macromates.com">TextMate</a> (mate).  But fewer people have that already on their system.</p>
+<p>By the way, if you're using the <a href="http://gembundler.com/">Bundler</a> gem, your working directory includes a Gemfile file or Gemfile is further up its path, and <code>bundle install</code> is current, then you can do this instead:</p>
+<p><code>$ bundle open [gem_name]<br />
+</code></p>
+<p>Somewhat less useful to me.  Sometimes I just want to poke around inside a lib.  It's not necessarily one in active use at that moment.  But choose whatever approach fits your workflow best.</p>

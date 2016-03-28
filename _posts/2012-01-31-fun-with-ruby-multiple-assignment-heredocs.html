@@ -1,0 +1,34 @@
+---
+layout: post
+title: Fun with Ruby multiple-assignment heredocs
+date: 2012-01-31 12:29:22.000000000 -08:00
+type: post
+published: true
+status: publish
+categories:
+- Web &amp; Technology
+tags: []
+meta:
+  _edit_last: '1'
+author:
+  login: admin
+  email: cczona@gmail.com
+  display_name: admin
+  first_name: Carina C.
+  last_name: Zon
+---
+<p><code>puts (foo = &lt;&lt;FIRST),(bar = &lt;&lt;SECOND),(baz = &lt;&lt;THIRD)<br />
+a<br />
+FIRST<br />
+b<br />
+SECOND<br />
+c<br />
+THIRD</code></p>
+<pre>a
+b
+c</pre>
+<p><code>puts baz, foo, bar</code></p>
+<pre>c
+a
+b</pre>
+<p>A nice option when you've got a series of strings that need escapes.</p>

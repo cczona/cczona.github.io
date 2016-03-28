@@ -1,0 +1,24 @@
+---
+layout: post
+title: Git "corrupt patch" when staging
+date: 2012-09-24 01:05:09.000000000 -07:00
+type: post
+published: true
+status: publish
+categories:
+- Web &amp; Technology
+tags: []
+meta:
+  _edit_last: '1'
+author:
+  login: admin
+  email: cczona@gmail.com
+  display_name: admin
+  first_name: Carina C.
+  last_name: Zon
+---
+<p>In an ideal world, you could check out any arbitrary commit and it's pass all tests, <i>and</i> have no bits of code trailing along that belong to another feature/issue.   Line-by-line staging is how I first got religion where Git was concerned.  Judicious use of it truly makes ideal commits feasible.  Ahhh.  Truly a Cool Git Trick.</p>
+<p>But there's a bug.  Maybe you've seen it.  Periodically, seemingly at random, attempting to stage or unstage a line results in an patch error such as "<code>Applying patch failed with return value 128. Error: fatal: corrupt patch at line 12</code>".  Don't believe it.</p>
+<p>The bug originates with Git-Gui, which doesn't know how to stage a line when the file doesn't end with a trailing newline (EOF).  It's been <a href="http://git.661346.n2.nabble.com/BUG-git-apply-sometimes-says-quot-corrupt-patch-quot-when-adding-single-lines-td5434443.html">a known problem since at least 2010</a> and <a href="http://stackoverflow.com/questions/12147930/fatal-corrupt-patch-at-line-xx-when-staging-single-line">it's a bug that's still around today</a>.</p>
+<p>Add the trailing newline.  Solved.</p>
+<p>P.S. Want to learn about staging lines with Git?  Check out <a href="http://cbx33.github.com/gitt/afterhours5-1.html">"Splitting up commits the easy way"</a> by Peter Savage.  GitX(L) and SourceTree both support this workflow really well, and (ironically) are much nicer GUIs overall.  SourceTree, by the way, doesn't show this bug.  GitX(L) does.  Bah humbug.</p>

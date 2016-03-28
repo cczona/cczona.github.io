@@ -1,0 +1,53 @@
+---
+layout: post
+title: Diffing for commits
+date: 2012-01-20 15:55:12.000000000 -08:00
+type: post
+published: true
+status: publish
+categories:
+- Web &amp; Technology
+tags: []
+meta:
+  _edit_last: '1'
+author:
+  login: admin
+  email: cczona@gmail.com
+  display_name: admin
+  first_name: Carina C.
+  last_name: Zon
+---
+<dl>
+<dt><code>git diff</code></dt>
+<dd>Differences between <em>uncommitted</em> changes vs <em>staged</em> changes.</dd>
+<dt><code>git diff --cached</code> or <code>git diff --staged</code></dt>
+<dd>Differences between <em>staged</em> changes vs the <em>latest commit</em>.</dd>
+<dt><code>git difftool</code></dt>
+<dd>Use an <em>external application</em> to visualize <code>git diff</code>.</dd>
+<dt><code>git difftool --tool [name]</code> or <code>git difftool -t [name]</code></dt>
+<dd>Use a <em>specified</em> external application to visualize <code>git diff</code>.</dd>
+</dl>
+<p>On OSX, XCode installs one such visual tool, <a href="http://sakr.me/146">FileMerge</a>, into /Developer/Applications/Utilities/FileMerge.app. You can invoke FileMerge by its commandline name, opendiff. i.e. <code>git difftool -t opendiff</code>. FileMerge/opendiff does a nice job of reporting each change when diffing plain text files, such as uncompiled code.</p>
+<p><code>git help difftool</code> lists other tools it know how to use, such as araxis, bc3, diffuse, emerge, ecmerge, gvimdiff, kdiff3, kompare, meld, opendiff, p4merge, tkdiff, vimdiff and xxdiff. (Not all of these are installed by default. <a href="http://www.araxis.com/merge/">Araxis Merge</a>, for instance, is a commercial product capable of visualizing diffs for Word, Excel, OpenDocument, PDF, RTF, images, and binary files.  It's also expensive as heck.)</p>
+<p>
+If your preferred diff tool is not on this list, <code>git config</code> can be used to add custom support for it. <code>git help difftool</code> has details.</p>
+<p>For PDFs, I like diffpdf.  It's free, open source, and one of the few diff tools that picks up on both visual and textual changes. I own a bunch of beta books, each of which get regular content updates by their authors.  It's handy to be able to see exactly what's changing across time in those PDFs, whether it be  diagram refinements, clarifying an example, subtle typo fixes, or whole new passages.</p>
+<h3>How to use git difftool -t diffpdf on OSX</h3>
+<ol>
+<li>Install <a href="http://mxcl.github.com/homebrew/">homebrew</a></li>
+<li>Install <a href="http://www.qtrac.eu/diffpdf.html">diffpdf</a>
+  </li>
+<li><a href="http://stackoverflow.com/questions/6412516/configuring-diff-tool-with-gitconfig">Configure git</a>
+  </li>
+</ol>
+<p>By the way, these tools don't necessarily have to be used via git.  Generally they allow you to compare any arbitrary two (sometimes even three) files.  Note that tools vary as to what, and how, they report changes.  diff, for instance, punts on binaries:</p>
+<blockquote>
+<pre>$ diff foo.txt bar.txt
+1,1
+< Hello world
+---
+> My little pony
+
+$ diff A.jpg B jpg
+Binary files A.jpg and B.jpg differ</pre>
+</blockquote>

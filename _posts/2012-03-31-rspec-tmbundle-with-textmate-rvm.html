@@ -1,0 +1,26 @@
+---
+layout: post
+title: Textmate errors using rspec.tmbundle & RVM
+date: 2012-03-31 13:26:09.000000000 -07:00
+type: post
+published: true
+status: publish
+categories:
+- Web &amp; Technology
+tags: []
+meta:
+  _edit_last: '1'
+author:
+  login: admin
+  email: cczona@gmail.com
+  display_name: admin
+  first_name: Carina C.
+  last_name: Zon
+---
+<p>Out of the box, rspec.tmbundle doesn't always interact smoothly with TextMate and RVM. Here's how to fix a few errors TextMate may generate:</p>
+<p><code>/Users/your-username/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/site_ruby/1.9.1/rubygems/custom_require.rb:36:in `require': no such file to load -- spec/autorun (LoadError) from /Users/your-username/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/site_ruby/1.9.1/rubygems/custom_require.rb:36:in `require' from /Users/your-username/Library/Application Support/TextMate/Bundles/rspec.tmbundle/Support/lib/rspec/mate.rb:43:in `rescue in ' from /Users/your-username/Library/Application Support/TextMate/Bundles/rspec.tmbundle/Support/lib/rspec/mate.rb:40:in `' from :29:in `require' from :29:in `require' from /tmp/textmate-command-12490.rb:2:in `'</code></p>
+<h2>rspec.tmbundle</h2>
+<p>TextMate's rspec bundle is looking for a <a href="https://github.com/rspec/rspec-tmbundle"><var>rspec-tm</var> file</a> in the project root directory, specifying which version of Rspec to be using. <code>--rspec-version 2.9.0</code>, for instance.</p>
+<h2>RVM</h2>
+<p>RVM needs <a href="https://rvm.beginrescueend.com/integration/textmate/"><code>rvm-auto-ruby</code>, a project <var>.rvmrc</var>, or a wrapper</a>. Set the .rvmrc to something like <code>rvm use 1.9.3@this-projects-gemset</code>, for instance. (MiniTest is fine with me just using rvm-auto-ruby, while Rspec is also needing the .rvmrc for some reason. So if you're still getting errors, try combining solutions.)</p>
+<p>rspec.tmbundle may also need you to set RUBYOPT to "rubygems".</p>

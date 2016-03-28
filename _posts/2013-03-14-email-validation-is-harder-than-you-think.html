@@ -1,0 +1,36 @@
+---
+layout: post
+title: Email validation is harder than you think.
+date: 2013-03-14 18:51:31.000000000 -07:00
+type: post
+published: true
+status: publish
+categories:
+- Web &amp; Technology
+tags: []
+meta:
+  _edit_last: '1'
+author:
+  login: admin
+  email: cczona@gmail.com
+  display_name: admin
+  first_name: Carina C.
+  last_name: Zon
+---
+<p>I got asked recently about email validation: <q><em>is "+" valid?</em></q></p>
+<p>Yes, the plus sign is a legal character in an email address.  Though even if it were not, you'd do well to accept that character since it's used by millions of Gmail users:</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=oJ8-Q-rNvPI">Video about Gmail convenience filtering with the plus sign</a></li>
+<li><a href="http://lifehacker.com/199280/generate-unlimited-email-addresses-with-gmail"> Lifehacker, 2006</a></li>
+<li><a href="http://lifehacker.com/144397/instant-disposable-gmail-addresses">Lifehacker, 2012</a></li>
+</ul>
+<p>Many surprising characters are legal in an email address.  Pretty much everybody gets email validation wrong.</p>
+<ul>
+  <a href="http://davidcel.is/blog/2012/09/06/stop-validating-email-addresses-with-regex/">"Stop Validating Email Addresses with Regex"</a><br />
+  <a href="http://idn.icann.org/E-mail_test">ICANN test for legal internationalized email address characters</a>
+</ul>
+<p>If you still want to take a shot at evaluate the correctness of an email address string, at least do it with library that uses a parser and has attempted (nevertheless imperfectly) the  difficult task of complying with all the relevant RFCs.  For example:</p>
+<ul>
+<li><a href="https://github.com/cczona/mail/tree/master/lib/mail/parsers">Ruby</a></li>
+<li><a href="http://blog.dominicsayers.com/2011/03/email-address-validation/">PHP</a></li>
+</ul>

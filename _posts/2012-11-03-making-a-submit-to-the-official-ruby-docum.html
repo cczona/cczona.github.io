@@ -1,0 +1,40 @@
+---
+layout: post
+title: Submitting commits to official Ruby & Rails documentation
+date: 2012-11-03 13:09:01.000000000 -07:00
+type: post
+published: true
+status: publish
+categories:
+- Web &amp; Technology
+tags: []
+meta:
+  _edit_last: '1'
+  _wp_old_slug: makjing-a-submit-to-the-official-ruby-docum
+author:
+  login: admin
+  email: cczona@gmail.com
+  display_name: admin
+  first_name: Carina C.
+  last_name: Zon
+---
+<p>Done!  Submitted my very first commit for the official Ruby documentation.</p>
+<blockquote class="twitter-tweet"><p>Oh so nerve-wracking to submit a commit to the ruby/ruby repo, even a documentation fix. <a href="https://twitter.com/search/%23missionaccomplished">#missionaccomplished</a> <a href="https://twitter.com/search/%23whoohoo">#whoohoo</a>!</p>
+<p>&mdash; Carina C. Zona (@cczona) <a href="https://twitter.com/cczona/status/264804451490095104" data-datetime="2012-11-03T19:01:15+00:00">November 3, 2012</a></p></blockquote>
+<p><script src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+<p>Patting myself on the back for having spotted the error.  It was over 2 months old &mdash; surprising for a standard library like URI::HTTP.  So I second-guessed myself initially.</p>
+<p><small><em>Surely that doc gets scrutinized by hundreds of people daily.  <small>Surely someone else would have spotted it ages ago, if it were done incorrectly.  <small>Surely I just haven't heard about some fancy new syntactical construct.  <small>Surely the fact that the example doesn't work for me is because I must've done something incorrectly.  Surely.</small></small></small></em></small></p>
+<p>That voice in the back of the head is noise from <a href="http://en.wikipedia.org/wiki/Impostor_syndrome">imposter syndrome</a>.  <strong>Shut up, you.</strong></p>
+<p>Doubt like this depends too on believing that those who have contributed to Ruby are infallible. A mythbuster, for me and for you:</p>
+<blockquote><p><code>$ cd ruby-official-repo<br />
+$ git log | grep -ic "typo"<br />
+842</code></p></blockquote>
+<p>Trust your instinct.  Verify.  Make better things happen.  Commit.</p>
+<p></p>
+<p>Last month I also made a first commit for the official Rails documentation, and &mdash; hooray! &mdash; it was accepted.  Though not without a brief <em>facepalm</em> moment when I accidentally submitted a big bunch of other people's commits with it.  Luckily, the railsdocs repository is maintained separately from the Rails codebase.  So it was a quick fix by doing <code>git reset --HARD</code> on master branch then the documentation maintainers and I each did a <code> git push -f</code> on our respective repos, and rebased my branch's commit back in.  Voila, solved.</p>
+<p>It's a good example of where Git is a big win for contributor, maintainers, and collaborators.  It is also a good example of how wins like these are made easiest when developers are required to submit to an upstream via a branch rather than on top of master.</p>
+<p>So, summary: I can now put "Rails documentation contributor" on the résumé, and hopefully soon will be able to put "Ruby documentation contributor" on it too.  Don't worry; even though I'm a cool kid now, I still want to hang out with you.</p>
+<p>UPDATE: Mission accomplished. What fun.</p>
+<blockquote class="twitter-tweet"><p>Documentation patch accepted. I'm officially a contributor to Ruby.Neato. <a href="https://t.co/fClM01z6" title="https://bugs.ruby-lang.org/projects/ruby-trunk/repository/revisions/37472">bugs.ruby-lang.org/projects/ruby-…</a></p>
+<p>&mdash; Carina C. Zona (@cczona) <a href="https://twitter.com/cczona/status/265280396726530049" data-datetime="2012-11-05T02:32:29+00:00">November 5, 2012</a></p></blockquote>
+<p><script src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>

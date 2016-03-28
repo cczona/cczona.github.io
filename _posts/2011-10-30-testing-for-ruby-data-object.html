@@ -1,0 +1,43 @@
+---
+layout: post
+title: Testing for Ruby DATA object
+date: 2011-10-30 21:22:36.000000000 -07:00
+type: post
+published: true
+status: publish
+categories:
+- Web &amp; Technology
+tags: []
+meta:
+  _edit_last: '1'
+author:
+  login: admin
+  email: cczona@gmail.com
+  display_name: admin
+  first_name: Carina C.
+  last_name: Zon
+---
+<p>Ruby's DATA object makes it possible to do neat little tricks like <a href="http://shifteleven.com/articles/2009/02/09/useless-ruby-tricks-data-and-__end__">storing templates and datafiles within the script that uses it</a>.</p>
+<p><code><br />
+#!/usr/bin/env ruby<br />
+DATA.class # File<br />
+DATA.read # 'now we have a DATA object'<br />
+...<br />
+__END__<br />
+now we have a DATA object<br />
+</code></p>
+<p>But accessing it from external files, including test suites, is a pain.  Only the original file can see the DATA object. Ruby raises a NameError exception, complaining that the 'DATA' constant is undefined.</p>
+<p>Working around this can be easy when you keep in mind that DATA is just another I/O object.  So you can, for instance, create a substitute File object.  And, like any other File object, if you're going to read it repeatedly <a href="http://stackoverflow.com/questions/1333720/ruby-scope-of-data-after-end">you need to reset the pointer for each read</a>.</p>
+<p><code><br />
+if Module.const_defined?(:DATA)<br />
+  SOURCE=DATA<br />
+  POSITION=SOURCE.pos<br />
+else<br />
+  SOURCE=File.new(__FILE__)<br />
+  POSITION=File.read(SOURCE).match(/^__END__.*$/).offset(0)[1]+1<br />
+end</p>
+<p>def data<br />
+  SOURCE.pos=POSITION<br />
+  SOURCE.read<br />
+end<br />
+</code></p>

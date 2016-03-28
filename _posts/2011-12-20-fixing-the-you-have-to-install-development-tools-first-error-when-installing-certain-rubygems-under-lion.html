@@ -1,0 +1,44 @@
+---
+layout: post
+title: Fixing the "you have to install development tools first" error when installing
+  certain Rubygems under Lion
+date: 2011-12-20 21:16:34.000000000 -08:00
+type: post
+published: true
+status: publish
+categories:
+- Web &amp; Technology
+tags: []
+meta:
+  _edit_last: '1'
+author:
+  login: admin
+  email: cczona@gmail.com
+  display_name: admin
+  first_name: Carina C.
+  last_name: Zon
+---
+<p>Ah, Lion, you stealthy beast.  At first you pretended to be fine with RVM, but it was a mis-lead.  I reinstalled Homebrew and RVM, and you did seem content.  Rubies waiting where they should be, even with their gemsets attached.  But then I tried to use sqlite, and you just growled errors at me.  Even after upgrading XCode, you still insist that I "have to install development tools first."</p>
+<p>For the record, when upgrading to Lion:</p>
+<ol>
+<li>Finish with the Lion upgrade.
+</li>
+<li>Go to the App Store and download XCode 4.  It's free.
+</li>
+<li>After XCode 4 finishes downloading (over an hour in my case, but your mileage may vary), open "/Applications/Install XCode".  Let it too do its stuff.
+</li>
+<li><code>$ brew update</code>
+</li>
+<li><code>$ brew install --force sqlite</code>
+</li>
+<li><code>$ rvm gem head</code>
+</li>
+<li><code>$ rvm --force install 1.9.3</code> # whatever Ruby version you use; lather, rinse, repeat
+</li>
+<li><code>$ gem install sqlite3</code> # or bundle install sqlite3, if using Bundler
+</li>
+</ol>
+<p>Forcing RVM to reinstall its Rub(y|ies) is probably necessary if you have any gem that relies on C headers.</p>
+<p>Homebrew is merely optional.  But sqlite relies on the library it installs, and I try to not carry forward messiness that's bound to bite me on the ass later.</p>
+<p>Shout outs to <a href="http://www.fakingfantastic.com/2010/11/26/fixing-the-you-have-to-install-development-tools-first-error-with-nokogiri/">Frank Lakatos of Faking Fantastic</a> for the RVM fix, and to <a href="http://stackoverflow.com/a/421341/893498">Jörg W Mittag's explanation on Stackoverflow about CGems</a>.</p>
+<p class="alert">UPDATE: Apple has release a UNIX tools package for Lion which contains the necessary headers.</p>

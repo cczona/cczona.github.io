@@ -1,0 +1,66 @@
+---
+layout: post
+title: MemoryFinder.lookup
+date: 2011-10-07 21:58:01.000000000 -07:00
+type: post
+published: true
+status: publish
+categories:
+- Web &amp; Technology
+tags: []
+meta:
+  _edit_last: '1'
+author:
+  login: admin
+  email: cczona@gmail.com
+  display_name: admin
+  first_name: Carina C.
+  last_name: Zon
+---
+<p>Ingenious.  Simple.  If you program in Ruby, check out the handy-dandy <a href="https://github.com/citizen428/methodfinder">MethodFinder</a> utility.  It's a prompt for your memory when you only <em>almost</em> remember which method name you want.  Or when you have no idea altogether.  You just give it a receiver and desired return value; it gives you a list of methods which, when sent to the receiver, return the specified value.</p>
+<h2>Install MethodFinder</h2>
+<p><code><br />
+$ gem install methodfinder<br />
+</code></p>
+<p><small>(The method_finder gem is unrelated)</small></p>
+<h2>Let the searches begin</h2>
+<p>If you require it in <code>.irbrc</code>, then irb sessions will have MethodFinder available automatically.</p>
+<p><code><br />
+# .irbrc<br />
+begin; require 'methodfinder';             rescue LoadError => err; warn "#{err}"; end<br />
+</code></p>
+<p>Now let's fire up irb<br />
+<code><br />
+$ irb<br />
+irb > MethodFinder.find('a', 0)<br />
+ => [:oct, :to_c, :to_f, :to_i, :to_r]<br />
+irb > MethodFinder.find('a', 1)<br />
+ => [:bytesize, :length, :size]<br />
+irb > MethodFinder.find('a', :a)<br />
+ => [:intern, :to_sym]<br />
+irb > MethodFinder.find('a', String)<br />
+ => [:class]<br />
+irb > MethodFinder.find(10, 100)<br />
+  => [:abs2]<br />
+irb > MethodFinder.find(10,11)<br />
+  => [:next, :succ]<br />
+irb > MethodFinder.find('abc', 'Abc')<br />
+ => [:capitalize, :capitalize!]<br />
+irb > MethodFinder.find('abc', 'cba')<br />
+ => [:reverse, :reverse!]<br />
+irb > MethodFinder.find('abc', 'a')<br />
+ => [:chr]<br />
+irb > MethodFinder.find('abc', 'ab')<br />
+ => [:chop, :chop!]<br />
+irb > MethodFinder.find('abc', :abc)<br />
+ => [:intern, :to_sym]<br />
+irb > MethodFinder.find('abc', 'ABC')<br />
+ => [:swapcase, :swapcase!, :upcase, :upcase!]<br />
+irb > MethodFinder.find(0, true)<br />
+ => [:even?, :frozen?, :integer?, :real?, :zero?]<br />
+irb > MethodFinder.find(0, false)<br />
+ => [:!, :nil?, :odd?, :tainted?, :untrusted?]<br />
+</code></p>
+<p>MethodFinder is looking for <em>return value</em>, so keep in mind that some methods don't have the return value that one might expect them to.  For instance, <code>IO#puts</code>, <code>IO#print</code>, and <code>IO#printf</code> send to standard out (<abbrev>STDOUT</abbrev>) while returning nil.</p>
+<h2>Get More Elaborate</h2>
+<p>The documentation demonstrates that more complex and/or granular searches are possible too.  You can inquire what method to use within a supplied block, for instance.</p>

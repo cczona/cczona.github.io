@@ -1,0 +1,35 @@
+---
+layout: post
+title: 'Rspec in a nutshell: dis and mock'
+date: 2012-01-17 17:01:47.000000000 -08:00
+type: post
+published: true
+status: publish
+categories:
+- Web &amp; Technology
+tags: []
+meta:
+  _edit_last: '1'
+author:
+  login: admin
+  email: cczona@gmail.com
+  display_name: admin
+  first_name: Carina C.
+  last_name: Zon
+---
+<p>Writing tests with Rspec is all about disssing your code and mockery. Feel free to point and laugh at it, too.</p>
+<p>Kidding. But it does give us a handy-dandy mnemonic for <a href="https://www.relishapp.com/rspec/rspec-core/docs/example-groups/basic-structure-describe-it">basic Rspec syntax</a></p>
+<pre>describe Project do
+  it "should be able to abbreviate its name" do
+    mock_project = mock_model(Project, :name =&gt; "My Big Project")
+    mock_project.abbr.should == "MyBP"
+  end
+end</pre>
+<ol>
+<li><strong>D</strong>escribe</li>
+<li><strong>I</strong>t</li>
+<li><strong>S</strong>pec</li>
+<li><a href="https://www.relishapp.com/rspec/rspec-mocks"><strong>Mock</strong></a></li>
+</ol>
+<p>Hmm. An optional Context throws this off a bit.  Well, you'll just have to memorize "d(c)is" on your own.</p>
+<p><cite>(Example courtesy of "Rails Test Prescriptions")</cite></p>

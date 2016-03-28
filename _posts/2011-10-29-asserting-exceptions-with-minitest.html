@@ -1,0 +1,32 @@
+---
+layout: post
+title: Testing for exceptions with MiniTest
+date: 2011-10-29 23:47:05.000000000 -07:00
+type: post
+published: true
+status: publish
+categories:
+- Web &amp; Technology
+tags: []
+meta:
+  _edit_last: '1'
+author:
+  login: admin
+  email: cczona@gmail.com
+  display_name: admin
+  first_name: Carina C.
+  last_name: Zon
+---
+<p>Much of Ruby 1.9.x's MiniTest library (the replacement and mimic for the former Unit/Test library) is pretty straightforward. Most commonly the pattern is:<br />
+<code>assert_something(expected, actual, optionalMessage)</code></p>
+<p>Sometimes you need to verify that specific conditions will cause the app to raise an exception as it should. This is where MiniTest's syntax diverges a bit from its usual routine. The critical part to make note is: <em>pass actual in a block</em>. The encapsulation allows MiniTest to capture, evaluate, and usefully report on the outcome; rather than summarily halt execution.</p>
+<h2>Assertion</h2>
+<p><code><em><strong>assert_raises</strong>(<var>expectedException</var>) {<var>code block that will actually raise that exception</var>}</em><br />
+assert_raises(<var>NoMethodError</var>) {<var>Integer.fizzbuzz</var>}<br />
+</code></p>
+<h2>Expectation</h2>
+<p><code><em>proc {<var>code block that will actually raise that exception</var>}.<strong>must_raise</strong>(<var>expectedException</var>)</em><br />
+proc {Integer.fizzbuzz}.must_raise(NoMethodError)</code></p>
+<h3>Head's up</h3>
+<p>Notice a more subtle variation? "must_raise" vs. "assert_raise<strong>s</strong>" &lt;&lt;-trailing "s"</p>
+<p>Don't get tripped up.</p>

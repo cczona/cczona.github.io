@@ -1,0 +1,47 @@
+---
+layout: post
+title: Ruby 1.9.1 bugginess
+date: 2011-10-20 18:39:13.000000000 -07:00
+type: post
+published: true
+status: publish
+categories:
+- Web &amp; Technology
+tags: []
+meta:
+  _edit_last: '1'
+author:
+  login: admin
+  email: cczona@gmail.com
+  display_name: admin
+  first_name: Carina C.
+  last_name: Zon
+---
+<p>Working on a server which only has Ruby 1.9.1 installed is a constant challenge.  Hours wasted chasing "WTF?" bugs that turn out to be 1.9.1 itself misbehaving.  Because they're triggered only under certain conditions, they're not widely known.</p>
+<p>Upgrade to 1.9.2, where that's an option.  But sometimes it's what we're stuck with.  Or we're choosing to test against multiple version of Ruby to make sure it's backwards compatible.</p>
+<p>So for the benefit of others using 1.9.1, here are some gotchas to be aware of:</p>
+<h2>gem_prelude</h2>
+<h3>"Error loading gem paths on load path in gem_prelude</h3>
+<p>In 1.9.1 patchlevels 329 and (current HEAD) 431, <a href="http://redmine.ruby-lang.org/issues/2404">if the environment variable GEM_HOME is set</a>, to any value, Ruby always starts execution with:</p>
+<blockquote><p>
+    Error loading gem paths on load path in gem_prelude<br />
+    can't modify frozen string<br />
+    <internal:gem_prelude>:69:in `force_encoding'<br />
+    <internal:gem_prelude>:69:in `set_home'<br />
+    <internal:gem_prelude>:38:in `dir'<br />
+    <internal:gem_prelude>:76:in `set_paths'<br />
+    <internal:gem_prelude>:47:in `path'<br />
+    <internal:gem_prelude>:286:in `push_all_highest_version_gems_on_load_path'<br />
+    <internal:gem_prelude>:355:in `<compiled>'<br />
+</compiled></internal:gem_prelude></internal:gem_prelude></internal:gem_prelude></internal:gem_prelude></internal:gem_prelude></internal:gem_prelude></internal:gem_prelude></p></blockquote>
+<p>RVM provides 1.9.1 patchlevel 378 and patchlevel 431.  RVM sets GEM_HOME.  The Ruby team patched 378, so it's not affected.  The Ruby team has not patched 431.</p>
+<p>In theory, RVM can <a href="http://beginrescueend.com/rubies/installing/">compile</a> with the <a href="http://redmine.ruby-lang.org/attachments/702/patch">gem_prelude patch</a>.  It's failing for me: "missing header for unified diff at line 5 of patch".  But worth trying.</p>
+<p>The gem_prelude bug also messes with the invaluable <a href="https://github.com/carlhuda/bundler/issues/442">Bundler</a> for gemset management.</p>
+<h2>Gem.loaded_specs</h2>
+<p>When attempting to require a gem that definitely exists and is definitely on Gem.path, in some versions of 1.9.1, the require returns false anyway.  If preceded by a gem statement ("gem 'somegemname'), both statements still return false.  Interestingly, sometimes the gem statement will fail and yet the require doesn't.</p>
+<p>Even when the require correctly returns true, Gem.loaded_specs doesn't populate.</p>
+<p>But try this: call Gem.loaded_specs first, then (if necessary) gem statement, then the require.  Voila, works!</p>
+<p>These are just the most recent of my finds.</p>
+<h2>The big picture.</p>
+<p>Finding help for 1.9.1 bugs can be difficult.  It's considered so buggy that most, <a href="http://rubyonrails.org/download">including the Rails team</a> and man gem developers, have chosen to ignore and not support it.  Which means that experience with its many bugs, and few fixes, is minimal even among those who are game to assist.</p>
+</h2>

@@ -1,0 +1,23 @@
+---
+layout: post
+title: Rewriting history
+date: 2012-01-07 21:48:02.000000000 -08:00
+type: post
+published: true
+status: publish
+categories:
+- Web &amp; Technology
+tags: []
+meta:
+  _edit_last: '1'
+author:
+  login: admin
+  email: cczona@gmail.com
+  display_name: admin
+  first_name: Carina C.
+  last_name: Zon
+---
+<p>Ever commit to repo and then belatedly realize that the authorship metadata isn't what it should be?  Easy to do when pair programming.</p>
+<p><a href="http://help.github.com/change-author-info/">Here's a nifty little script for fixing authorship of commits within a Git repository.</a>  It uses a Git plumbing command called <var>filter-branch</var>.</p>
+<p>Consider the GitHub-provided script a starting point for your own, rather than a copy/paste solution.  <a href="http://linux.die.net/man/1/git-filter-branch">Read filter-branch's documentation</a> carefully before using.  <var>filter-branch</var> changes the SHA-1 value of any commits affected, which means that every descendant commit's SHA-1 will also be re-written.  Of course, there are also the usual caveats about the pitfalls of changing history on a shared repo.</p>
+<p>More info: <a href="http://progit.org/book/ch6-4.html">rewriting history from Scott Chacon, in Pro Git</a>.</p>

@@ -1,0 +1,33 @@
+---
+layout: post
+title: Mountain Lion App Store + previous install of Growl == unhappy
+date: 2012-09-04 15:17:30.000000000 -07:00
+type: post
+published: true
+status: publish
+categories:
+- Web &amp; Technology
+tags: []
+meta:
+  _edit_last: '1'
+author:
+  login: admin
+  email: cczona@gmail.com
+  display_name: admin
+  first_name: Carina C.
+  last_name: Zon
+---
+<p>The new Notifications Center in Mountain Lion is a pale, pale imitation of good ol' Growl.  But after upgrading OSX, the App Store refused to update Growl.  Upon clicking the "update" button, the store kept complaining:</p>
+<blockquote><p><code>"You have updates available for other accounts. To update this application, sign in to the account you used to purchase it." </code></p></blockquote>
+<p>Don't believe it.  At least, don't assume it's returning a correct error message for your situation.  While some people do purchase software under multiple accounts, this wasn't the case here.</p>
+<h3>The actual complication:</h3>
+<p>The App Store doesn't know how to cope with a previous Growl install &mdash; even one purchased through the store and not currently running.<br />
+<aside><em>(Sidenote: Apple, yo, two flaws to fix there.)</em></aside>
+<h3>How to solve it:</h3>
+<ol>
+<li>Download<sup>*</sup> <var><a href="http://growl.info/downloads">Growl Version Detective</a></var></li>
+<li>Remove everything it identifies in the "Growl" tab. (Don't worry about the Frameworks tab)</li>
+<li>Trash <var>/Applications/Growl.app</var></li>
+</ol>
+<p>Voila.  The App Store's "upgrade" button is replaced by "install".  Smooth sailing from there.  Including notifications that are top-rate.  Hurrah.</p>
+<aside><small>* (Growl Uninstaller is also available to download there.  It didn't solve this successfully. But it's worth trying if the above doesn't work.)</small></aside>

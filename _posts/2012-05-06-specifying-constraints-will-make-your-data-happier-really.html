@@ -1,0 +1,32 @@
+---
+layout: post
+title: Specifying constraints will make your data happier, really
+date: 2012-05-06 15:32:01.000000000 -07:00
+type: post
+published: true
+status: publish
+categories:
+- Web &amp; Technology
+tags: []
+meta:
+  _edit_last: '1'
+  _wp_old_slug: '288'
+author:
+  login: admin
+  email: cczona@gmail.com
+  display_name: admin
+  first_name: Carina C.
+  last_name: Zon
+---
+<p>In <a href="http://www.mikeperham.com/2012/05/05/five-common-rails-mistakes/">"Five Common Rails Mistakes"</a> Mike Perham reminds Rails developers to put data constraints (via migrations) into the database schema. Yes. For excellent detailed discussions of why, see:</p>
+<ul>
+<li><a href="http://stackoverflow.com/questions/464042/should-you-enforce-constraints-at-the-database-level-as-well-as-the-application">Should you enforce constraints at the database level as well as the application level?</a> at Stack Overflow</li>
+<li><a href="http://www.devarticles.com/c/a/Ruby-on-Rails/Handling-Advanced-Database-Features-with-Rails/">Handling Advanced Database Features with Rails</a> chapter from Advanced Rails</li>
+</ul>
+<p>Both are long, and well-worth taking the time to read thoroughly.</p>
+<p>A common counter-argument to these is duplication.  As the Advanced Rails excerpt notes, database logic and business logic are separate layers. Here are some gems to check out for DRYing up your models and schema:</p>
+<ul>
+<li><a href="https://www.ruby-toolbox.com/gems/schema_plus">schema_plus</a> <small>(<a href="http://www.slideshare.net/Michaomnicki/schema-plus">slides</a>)</small></li>
+<li><a href="https://www.ruby-toolbox.com/gems/schema_validations">schema_validations</a></li>
+<li><a href="https://www.ruby-toolbox.com/gems/schema_associations">schema_associations</a></li>
+</ul></p>

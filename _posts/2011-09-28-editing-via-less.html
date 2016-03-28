@@ -1,0 +1,50 @@
+---
+layout: post
+title: Editing via less
+date: 2011-09-28 00:40:03.000000000 -07:00
+type: post
+published: true
+status: publish
+categories:
+- Web &amp; Technology
+tags: []
+meta:
+  _edit_last: '1'
+  _jd_twitter: ''
+  _jd_tweet_this: 'yes'
+  _wp_jd_clig: ''
+  _wp_jd_bitly: ''
+  _wp_jd_wp: ''
+  _wp_jd_yourls: ''
+  _wp_jd_url: ''
+  _wp_jd_target: ''
+  _jd_wp_twitter: ''
+  _jd_post_meta_fixed: 'true'
+author:
+  login: admin
+  email: cczona@gmail.com
+  display_name: admin
+  first_name: Carina C.
+  last_name: Zon
+---
+<p>Do you ever do this?</p>
+<p><code>$ less myfile</code></p>
+<p>(View some stuff... Ah-hah, I need to make some changes in this&mdash;)</p>
+<p><code>$ editor myfile</code></p>
+<p>Here's a nice shortcut: from within less, hit the 'v' key instead.  Voila, file open and read to edit.</p>
+<blockquote>
+<p><cite><code>man less</code> (OSX 10.6<sup>*</sup>)</cite></p>
+<dl>
+<dt><code>v</code></dt>
+<dd>
+			Invokes an editor to edit the current file being viewed. The editor is taken from the environment variable <var>VISUAL</var> if defined, or <var>EDITOR</var> if <var>VISUAL</var> is not defined, or defaults to "vi" if neither <var>VISUAL</var> nor <var>EDITOR</var> is defined. See also the discussion of <var>LESSEDIT</var> under the section on PROMPTS below.
+		</dd>
+<dt><var>LESSEDIT</var></dt>
+<dd>
+			The default value for <var>LESSEDIT</var> is: <code>%E ?lm+%lm. %f</code>. Note that this expands to the editor name, followed by a + and the line number, followed by the file name. If your editor does not accept the "+linenumber" syntax, or has other differences in invocation syntax, the <var>LESSEDIT</var> variable can be changed to modify this default.
+		</dd>
+</dl>
+</blockquote>
+<p>For example, the <a href="http://manual.macromates.com/en/using_textmate_from_terminal.html">documentation for TextMate</a> recommends <code>LESSEDIT='mate -l %lm %f'</code>.</p>
+<p>The 'v' shortcut only applies when less is reading a <em>file</em>. It's not applicable to reading standard input <abbr title="standard input">(STDIN)</abbr>.<br />
+<aside><strong>*</strong>Not all implementations of less have this feature; but it's darned handy in those that do.</aside></p>

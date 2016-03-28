@@ -1,0 +1,45 @@
+---
+layout: post
+title: 'Fix for "make: /usr/bin/gcc-4.2: No such file or directory"'
+date: 2012-07-26 19:53:28.000000000 -07:00
+type: post
+published: true
+status: publish
+categories:
+- Web &amp; Technology
+tags:
+- linkedin
+meta:
+  _edit_last: '1'
+  _jd_twitter: ''
+  _jd_tweet_this: 'yes'
+  _wp_jd_clig: ''
+  _wp_jd_bitly: ''
+  _wp_jd_wp: ''
+  _wp_jd_yourls: ''
+  _wp_jd_url: ''
+  _wp_jd_target: ''
+  _jd_wp_twitter: ''
+  _jd_post_meta_fixed: 'true'
+author:
+  login: admin
+  email: cczona@gmail.com
+  display_name: admin
+  first_name: Carina C.
+  last_name: Zon
+---
+<p>When using "<code>gem install [something]</code>" after installing Mountain Lion, you may encounter this error:</p>
+<blockquote><p><code>Building native extensions.  This could take a while...<br />
+ERROR:  Error installing rails:<br />
+	ERROR: Failed to build gem native extension.<br />
+&hellip;<br />
+make: /usr/bin/gcc-4.2: No such file or directory<br />
+make: *** [generator.o] Error 1<br />
+</code></p></blockquote>
+<p>Apple removed GCC 4.2.  We'll just put it back where <var>make</var> expects it to be.  First <a href="https://github.com/mxcl/homebrew/wiki/installation">install the package manager Homebrew</a>. Then in Terminal do:</p>
+<blockquote><p>
+<code>$ brew tap homebrew/dupes<br />
+$ brew install apple-gcc42<br />
+$ sudo ln -s /usr/local/bin/gcc-4.2 /usr/bin/gcc-4.2</code>
+</p></blockquote>
+<p>UPDATED: added the <code>brew tap</code> line.  As rathrio notes, for some users the extra step is necessary.</p>
