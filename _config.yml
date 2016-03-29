@@ -1,8 +1,8 @@
 # Site wide configuration
 
-title:            Site Title
-locale:           en_US
 url:
+title: Carina C. Zona
+locale: en_US
 
 
 # Jekyll configuration
@@ -41,12 +41,12 @@ titlecase: true
 
 # Site owner
 owner:
-  name: Your Name
-  avatar: bio-photo.jpg
-  bio: "Describe your self."
-  email:
-  disqus-shortname:
-  twitter: #username
+  name: Carina C. Zona
+  avatar: carina-c-zona.jpg
+  bio:
+  email: cczona@gmail.com
+  disqus-shortname: cczona
+  twitter: cczona
   facebook: #username
   google:
     plus: #username
@@ -57,7 +57,7 @@ owner:
   bing-verify:
   github: #username
   stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
-  linkedin: #username
+  linkedin: cczona
   xing: #username
   instagram: #username
   lastfm: #username
