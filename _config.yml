@@ -32,7 +32,7 @@ post_ext: md
 page_ext: md
 
 # Found in _templates/
-post_layout: post
+post_layout: blog
 page_layout: page
 
 # Format titles with titlecase?
