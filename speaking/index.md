@@ -1,34 +1,22 @@
 ---
 layout: page
 title: Conferences
-date: 2014-04-18 03:13:12.000000000 -07:00
-type: page
-published: true
-status: publish
-categories: []
-tags: []
-meta:
-  _edit_last: '1'
-author:
-  login: admin
-  email: cczona@gmail.com
-  display_name: admin
-  first_name: Carina C.
-  last_name: Zon
 ---
 <h3>Code of Conduct Pledge</h3>
 <p>I participate in a lot of conferences, and have <a href="https://twitter.com/cczona/status/380202566040027136">pledged</a> to only do so at conferences that have a Code of Conduct. Thus why the schedule below includes links to those. It's a <a href="https://twitter.com/cczona/status/425869040796454912">reminder</a> to you and me both that this is a genuine commitment for me. If I screw up, please do let me know. It's an opportunity to have good conversations with organizers.</p>
 <p>Interested in learning more? Check out Ashe Dryden's <a href="http://www.ashedryden.com/blog/a-year-in-codes-of-conduct-at-tech-confs">pair</a> of <a href="http://www.ashedryden.com/blog/codes-of-conduct-101-faq">blog posts</a>, sign up at Julia Elman's <a href="http://www.letsgetlouder.com/">Let's Get Louder</a>, and browse my <a href="https://twitter.com/cocpledge">@cocpledge</a> aggregator to learn why other people say it matters for them too.</p>
 <p><a>Codes of conduct are a norm for hundreds of our communities' conferences</a>. I like that we all have opportunity to support their commitment, and to ask other conferences to appreciate that this is necessary and valuable.</p>
-<h3>2016 Conference Schedule</h3>
-<ul>
-<li>
-<strong><a href="http://2016.cusec.net/">CUSEC</a></strong><br />
+
+<h3>2016 Conferences</h3>
+
+* **[Lean Agile Scotland](http://leanagile.scot)**<br>([code of conduct](http://leanagile.scot/code-of-conduct/))<br>Keynote speaker
+
+* <strong><a href="http://2016.cusec.net/">CUSEC</a></strong><br />
 (<a href="http://2016.cusec.net/coc.html">code of conduct</a>).<br />
 <em>Keynote Speaker</em>
 </li>
 </ul>
-<h3>2015 Conference Schedule</h3>
+<h3>2015 Conferences</h3>
 <ul>
 <li>
 <strong><a href="http://rubyconf.org/">RubyConf</a></strong><br />
@@ -88,9 +76,7 @@ author:
 <em>Speaker</em>
 </li>
 <li>
-<strong><br />
-<a href="http://www.alterconf.com/sessions/portland-or">AlterConf Portland</a><br />
-</strong><br />
+<strong><a href="http://www.alterconf.com/sessions/portland-or">AlterConf Portland</a></strong><br />
 (<a href="http://www.alterconf.com/code-of-conduct">code of conduct, accessibility, etiquette</a>).
 </li>
 <li>
@@ -99,34 +85,25 @@ author:
 <em>Keynote Speaker. Unconference session facilitator.</em>
 </li>
 <li>
-<strong><br />
-<a href="http://fluentconf.com/javascript-html-2015">Fluent</a><br />
-</strong><br />
-(<a href="http://www.oreilly.com/conferences/code-of-conduct.html">code of conduct</a>)
+<strong><a href="http://fluentconf.com/javascript-html-2015">Fluent</a></strong><br />(<a href="http://www.oreilly.com/conferences/code-of-conduct.html">code of conduct</a>)
 </li>
 <li>
-<strong><br />
-<a href="http://montreal.adacamp.org/">AdaCamp Montreal</a><br />
+<strong><a href="http://montreal.adacamp.org/">AdaCamp Montreal</a>
 </strong><br />
 (<a href="http://montreal.adacamp.org/policies/">policies</a>)
 </li>
 <li>
-<strong><br />
-<a href="http://us.pycon.org/2015">PyCon</a><br />
+<strong><a href="http://us.pycon.org/2015">PyCon</a>
 </strong><br />
 (<a href="http://us.pycon.org/2015/about/code-of-conduct/">code of conduct</a>).<br />
 <em>Speaker</em>
 </li>
 <li>
-<strong><br />
-<a href="https://www.eventbrite.com/event/13540462889">Developer Evangelist Summit</a><br />
-</strong><br />
-(Whoops, I forgot to check!).
+<strong><a href="https://www.eventbrite.com/event/13540462889">Developer Evangelist Summit</a></strong><br />
+(Oops, I forgot to check)
 </li>
 <li>
-<strong><br />
-<a href="http://www.alterconf.com/sessions/sfoakland-ca">AlterConf Oakland</a><br />
-</strong><br />
+<strong><a href="http://www.alterconf.com/sessions/sfoakland-ca">AlterConf Oakland</a></strong><br />
 (<a href="http://www.alterconf.com/code-of-conduct">code of conduct, accessibility, etiquette</a>).
 </li>
 </ul>
@@ -148,7 +125,7 @@ author:
 </li>
 <li>
 <strong><a href="https://distill.engineyard.com/">Distill</a></strong><br />
-("<a href="https://www.engineyard.com/community/anti-harassment-statement">anti-harassment policy</a>)<br />
+(<a href="https://www.engineyard.com/community/anti-harassment-statement">anti-harassment policy</a>)<br />
 <em>Speaker</em>
 </li>
 <li>
