@@ -1,25 +1,10 @@
 ---
 layout: page
-title: About the Theme
-tags: [about, Jekyll, theme, responsive]
-modified: 2014-08-08T20:53:07.573882-04:00
-comments: true
-image:
-  feature: sample-image-2.jpg
-  credit: WeGraphics
-  creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
+title: About Carina
 ---
 
-Minimal Mistakes is responsive Jekyll theme with large featured images and solid typography. As the name implies the styling is fairly minimal to make it easier for you to build on top of.
+Carina C. Zona is a [developer evangelist](http://linkedin.com/in/cczona), [tech conference speaker](speaking/), advocate, [photographer](www.flickr.com/photos/northbaywanderer), [crocheter](http://www.ravelry.com/projects/cczona), gluten-free baker, and certified sex educator. 
 
-## Minimal Mistakes is all about:
+Carina is the founder of [CallbackWomen](http://callbackwomen.com), whose mission is to radically increase gender diversity at the podium of professional programmers' conferences. She has been an organizer & instructor for many other tech nonprofits. 
 
-* Responsive templates. Looking good on mobile, tablet, and desktop.
-* Gracefully degrading in older browsers. Compatible with Internet Explorer 8+ and all modern browsers.
-* Minimal embellishments -- content first.
-* Optional large feature images for posts and pages.
-* Simple and clear permalink structure.
-* [Custom 404 page](http://mmistakes.github.io/minimal-mistakes/404.html) to get you started.
-* Support for Disqus Comments
-
-<a markdown="0" href="{{ site.url }}/theme-setup" class="btn">Install Minimal Mistakes Theme</a>
+She spends a lot of time thinking about the unexpected cultural effects of our decisions as programmers. Her most popular talks, ["Consequences of an Insightful Algorithm"](https://storify.com/cczona/consequences-of-an-insightful-algorithm) and ["Schemas for the Real World"](https://storify.com/cczona/schemas-for-the-real-world), challenge others to do that too.
