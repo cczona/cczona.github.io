@@ -20,9 +20,18 @@ Interested in learning more? Check out Ashe Dryden's <a href="http://www.ashedry
 
 * **[Lean Agile Scotland](http://leanagile.scot)**<br>([code of conduct](http://leanagile.scot/code-of-conduct/))<br>Keynote speaker
 
-* <strong><a href="http://2016.cusec.net/">CUSEC</a></strong><br />
-(<a href="http://2016.cusec.net/coc.html">code of conduct</a>)<br />
-<em>Keynote Speaker</em>
+* **[Open Source Bridge](http://opensourcebridge.org/)**<br>([code of conduct](http://opensourcebridge.org/about/code-of-conduct/))
+
+* **[AlterConf San Francisco](http://www.alterconf.com/)**<br>([code of conduct](http://www.alterconf.com/code-of-conduct))
+
+* **[OSCON](http://conferences.oreilly.com/oscon/open-source-us)**<br>([code of conduct](http://www.oreilly.com/conferences/code-of-conduct.html))
+
+* **[Community Leadership Summit](http://www.communityleadershipsummit.com/)**<br>([code of conduct](http://www.communityleadershipsummit.com/about/harassment/))
+
+* **[DevRelCon](http://sf2016.devrel.net/)** <br> ([code of conduct]
+(http://sf2016.devrel.net/code-of-conduct/))
+
+* **[CUSEC](http://2016.cusec.net/)**<br />([code of conduct](http://2016.cusec.net/coc.html))<br />*Keynote Speaker*
 
 
 ### 2015
