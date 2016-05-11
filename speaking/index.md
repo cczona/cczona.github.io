@@ -28,8 +28,7 @@ Interested in learning more? Check out Ashe Dryden's <a href="http://www.ashedry
 
 * **[Community Leadership Summit](http://www.communityleadershipsummit.com/)**<br>([code of conduct](http://www.communityleadershipsummit.com/about/harassment/))
 
-* **[DevRelCon](http://sf2016.devrel.net/)** <br> ([code of conduct]
-(http://sf2016.devrel.net/code-of-conduct/))
+* **[DevRelCon](http://sf2016.devrel.net/)** <br> ([code of conduct](http://sf2016.devrel.net/code-of-conduct/))
 
 * **[CUSEC](http://2016.cusec.net/)**<br />([code of conduct](http://2016.cusec.net/coc.html))<br />*Keynote Speaker*
 
