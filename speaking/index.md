@@ -19,7 +19,7 @@ Interested in learning more? Check out Ashe Dryden's <a href="http://www.ashedry
 ### 2016
 
 
-* **[Lean Agile Scotland](http://leanagile.scot)**<br>([code of conduct](http://leanagile.scot/code-of-conduct/))<br>*Keynote speaker*
+* **[Lean Agile Scotland](http://leanagile.scot)**<br>([code of conduct](http://leanagile.scot/code-of-conduct/))<br>*Keynote Speaker*
 
 * **[Open Source Bridge](http://opensourcebridge.org/)**<br>([code of conduct](http://opensourcebridge.org/about/code-of-conduct/))
 
