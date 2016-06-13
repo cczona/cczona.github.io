@@ -55,6 +55,16 @@ Facebook, Google+, OkCupid, LinkedIn, Flickr and others are struggling with thes
 <a href="http://storify.com/cczona/schemas-for-the-real-world/">REVIEWS</a>
 </small>
 
+## Rock That Q&A: Pro Tips for Speakers, Audiences, and Hosts
+
+*Write Speak Code*
+
+Q&A rocks! It's an opportunity for listeners to clarify what's they've heard and engage deeper with content. Speakers gain valuable interactive feedback, and learn which points are worth elaborating on next time. Yet many of us are wary of Q&A. "What if I mis-speak?" "What if there are hecklers?" "What if I don't have all the answers?" They're understandable concerns. Mastering the art of Q&A allows us to fearlessly embrace that uncertainty.
+
+As developers, we're constantly educating; as speakers, instructors, authors, mentors, team members, and event organizers. When we can deftly rock Q&A, we deliver extra value in all of those roles.
+
+Productive Q&A arises from enthusiastic collaboration between speaker, audience, and host; in this talk, you'll learn skills for each role. We'll delve into setting expectations, selecting among various formats, keeping Q&A focused and on-time, dealing with complicated questions, counteracting attempts to derail, and using Q&A as excellent foundation for follow-up discussions, networking, and lead generation.
+
 
 ## Converged Cloud Computing That's Secure, Fast, or Cheap: Pick Three
 
