@@ -5,6 +5,8 @@ title: Talks
 
 {% include _toc.html %}
 
+**Below are previous talks I've given. [Additional talks are available](/speaking/abstracts/).**
+
 ## Consequences of an Insightful Algorithm
 
 <!--

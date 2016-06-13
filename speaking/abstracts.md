@@ -2,7 +2,8 @@
 layout: page
 title: More Abstracts
 ---
-<p>In addition to <a href="talks">talks I've previously given</a>, these are available by request:</p>
+
+**In addition to [talks I've previously given](/speaking/talks) these are available by request:**
 
 ### Data of the Dead
 
