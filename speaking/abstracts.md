@@ -3,7 +3,7 @@ layout: page
 title: More Abstracts
 ---
 
-**In addition to [talks I've previously given](/speaking/talks) these are available by request:**
+*Below are new talks available by request in addition to [talks I've previously given](/speaking/abstracts).*
 
 ### Data of the Dead
 
