@@ -18,8 +18,11 @@ Interested in learning more? Check out Ashe Dryden's <a href="http://www.ashedry
 
 ### 2016
 
+* **[GOTO Conference](http://gotocon.com/berlin-2016/)**<br>([code of conduct](http://gotocon.com/berlin-2016/code-of-conduct/))<br>*Keynote Speaker*
 
 * **[Lean Agile Scotland](http://leanagile.scot)**<br>([code of conduct](http://leanagile.scot/code-of-conduct/))<br>*Keynote Speaker*
+
+* **[EuRuKo](http://leanagile.scot)**<br>([code of conduct](http://berlincodeofconduct.org/))<br>*Speaker*
 
 * **[Open Source Bridge](http://opensourcebridge.org/)**<br>([code of conduct](http://opensourcebridge.org/about/code-of-conduct/))
 
