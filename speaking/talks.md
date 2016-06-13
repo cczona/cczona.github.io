@@ -23,7 +23,7 @@ title: Talks
 </aside>
 -->
 
-*RubyConf (keynote), JsConfEU (keynote), PyConAU (keynote), Open Source Bridge (keynote), CUSEC (keynote), WDCNZ, DjangoCon, ArrrrCamp, Lean Agile Scotland, All Things Open*
+*RubyConf (keynote), JsConfEU (keynote), PyConAU (keynote), Open Source Bridge (keynote), CUSEC (keynote), WDCNZ, DjangoCon, ArrrrCamp, Lean Agile Scotland, All Things Open, EuRuKo*
 
 We have ethical responsibilities when coding. We’re able to extract remarkably precise intuitions about an individual. But do we have a right to know what they didn’t consent to share, even when they willingly shared the data that leads us there? A major retailer’s data-driven marketing accidentially revealed to a teen’s family that she was pregnant. Eek.
 
