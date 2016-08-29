@@ -157,7 +157,7 @@ Interested in learning more? Check out Ashe Dryden's <a href="http://www.ashedry
 (<a href="http://www.communityleadershipsummit.com/about/harassment/">anti-harassment policy</a>)<br />
 *Unconference session facilitator.*
 
-* **<a href="http://radar.oreilly.com/2014/07/signals-from-foo-camp-2014.html">Foo Camp</a> **<br />
+* **<a href="http://radar.oreilly.com/2014/07/signals-from-foo-camp-2014.html">Foo Camp</a>**<br />
 (<a href="http://www.oreilly.com/conferences/code-of-conduct.html">code of conduct</a>)<br />
 *Unconference session facilitator*
 
