@@ -9,6 +9,8 @@ title: Ask Me About
 
 * **Slides:** [http://www.slideshare.net/cczona/consequences-of-an-insightful-algorithm](http://www.slideshare.net/cczona/consequences-of-an-insightful-algorithm)
 
+* **Code Newbies interview:** [http://www.codenewbie.org/podcast/algorithms](http://www.codenewbie.org/podcast/algorithms)
+
 
 ## Schemas for the Real World
 
