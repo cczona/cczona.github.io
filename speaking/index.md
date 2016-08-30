@@ -20,6 +20,8 @@ Interested in learning more? Check out Ashe Dryden's <a href="http://www.ashedry
 
 * **[GOTO Conference](http://gotocon.com/berlin-2016/)**<br>([code of conduct](http://gotocon.com/berlin-2016/code-of-conduct/))<br>*Keynote Speaker*
 
+* **[SCNA](http://scna.softwarecraftsmanship.org/)**<br>([code of conduct](http://scna.softwarecraftsmanship.org/code-of-conduct/))<br>*Speaker*
+
 * **[Lean Agile Scotland](http://leanagile.scot)**<br>([code of conduct](http://leanagile.scot/code-of-conduct/))<br>*Keynote Speaker*
 
 * **[EuRuKo](http://leanagile.scot)**<br>([code of conduct](http://berlincodeofconduct.org/))<br>*Speaker*
