@@ -7,8 +7,7 @@ title: Speaker
 
 ### Bio
 
-Carina C. Zona is a developer, advocate, and certified sex educator. She spends a lot of time thinking about the unexpected cultural effects of our decisions as programmers. Carina is the founder of [CallbackWomen](http://callbackwomen), a developer evangelist for Ruby Together, and co-organizer of the We So Crafty community of techies who craft.
-
+Carina C. Zona is a developer, advocate, and certified sex educator. She spends a lot of time thinking about the unexpected cultural effects of our decisions as programmers. Carina is also the founder of [CallbackWomen](http://callbackwomen), which is on a mission to radically increase gender diversity at the podium of professional programmers' conferences.
 
 ### Links
 
